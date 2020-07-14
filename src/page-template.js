@@ -16,8 +16,6 @@ const generatePage = (name, github) => {
     </html>
     `;
   };
-
-  fs.writeFile('index.html', generatePage(name, github), err => {
-    if (err) throw err;
+  
 
   module.exports = generatePage;
